@@ -3,7 +3,6 @@
 en cuenta que recibe un premio de $500 si trabajo más de 50 horas y, además, si trabajó más de 150 horas
 se le otorgan $1000 adicionales.
 """
-
 horas_trabajadas = int(input("Ingresa las horas trabajadas: "))
 valor_hora = int(input("Ingresa el valor x hora: "))
 
