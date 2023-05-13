@@ -1,4 +1,4 @@
-# 9 Confeccionar un programa que permita ingresar un caracter alfanumerico y determine e informe si lo ingresado corresponde a una vocal, con el mensaje “VOCAL”. y su correspondiente valor numérico en ASCII.
+# 09 Confeccionar un programa que permita ingresar un caracter alfanumerico y determine e informe si lo ingresado corresponde a una vocal, con el mensaje “VOCAL”. y su correspondiente valor numérico en ASCII.
 caracter = input("Ingrese un carácter alfanumérico: ")
 
 if len(caracter) == 1:  # Verificar que se haya ingresado un solo carácter
