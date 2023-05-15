@@ -18,3 +18,5 @@ lista_nombres1 = ["mario", "miguel", "franco", "mauro", "facundo"]
 lista_nombres2 = ["antonella", "maria", "malena", "javier", "leo"]
 print(lista_nombres1)
 print(lista_nombres2)
+lista_nombres1.append("mateo")
+print(lista_nombres1)
