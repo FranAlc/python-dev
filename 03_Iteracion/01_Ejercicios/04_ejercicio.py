@@ -1,4 +1,4 @@
-# 4 Se ingresan 10 letras. Determinar la cantidad de vocales ingresadas.
+# 04 Se ingresan 10 letras. Determinar la cantidad de vocales ingresadas.
 letras = input("Ingresa 10 letras: \n")
 cantidad_vocales = 0
 
