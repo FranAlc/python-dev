@@ -26,3 +26,10 @@ for i in range(18):
     temperatura = float(input("Ingrese el valor de temperatura: "))
     temperaturas.append(temperatura)
 """
+"""
+alumnos = []
+for i in range(10):
+    alumno = str(input(f"{i})Ingresa el nombre de cada alumno:"))
+    alumnos.append(alumno.title())
+print(alumnos)
+"""
