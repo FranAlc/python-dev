@@ -33,3 +33,26 @@ for i in range(10):
     alumnos.append(alumno.title())
 print(alumnos)
 """
+
+"""
+numero = int(input("Numero: "))
+mensaje = str(input("mensaje: "))
+
+for i in range(0, numero):
+    print("{} {}".format(i, mensaje))
+"""
+
+# Estructura de datos:
+# -Listas
+lista = list()  # lista = []
+print(type(lista))
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 'a', 'b', 'c', True, False]
+print(len(lista))
+
+# pop() Borra posicion de una lista
+# del lista[1] Borra perma
+# append() agrega elementos a una lista
+
+# -Tuplas
+
+# -Diccionarios
