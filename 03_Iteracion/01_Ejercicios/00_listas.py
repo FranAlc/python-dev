@@ -20,3 +20,9 @@ print(lista_nombres1)
 print(lista_nombres2)
 lista_nombres1.append("mateo")
 print(lista_nombres1)
+"""
+temperaturas = []
+for i in range(18):
+    temperatura = float(input("Ingrese el valor de temperatura: "))
+    temperaturas.append(temperatura)
+"""
