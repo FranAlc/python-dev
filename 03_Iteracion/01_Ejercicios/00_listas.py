@@ -121,3 +121,53 @@ equipos_futbol.append("Manchester city")
 print(f"{equipos_futbol}")
 for nombres_equipos in equipos_futbol:
     print(f"Equipo: {nombres_equipos.title()}")
+
+# Ejercicio 9
+# usos del ciclo for
+cuadrados = [valor**2 for valor in range(1, 11)]
+print(f"{cuadrados}")
+# Ejercicio 9.1
+# Conta hasta 20
+numeros = [valor for valor in range(20)]
+print(f"{numeros}")
+# Ejercicio 9.2
+# cuenta de 1 a 100
+numeros = [valor for valor in range(1, 100)]
+print(f"sum: {sum(numeros)}")  # Suma todos los numeros
+print(f"min: {min(numeros)}")  # Muestra el valor menor
+print(f"min: {max(numeros)}")  # Muestra el valor mayor
+print(f"arreglo: {numeros}")
+# Considerar dos posibilidades
+numero_par = list(range(2, 11, 2))
+print(f"numero par: {numero_par}")
+
+cuadrados = []
+for valor in range(2, 11):
+    cuadrado = valor ** 2
+cuadrados.append(cuadrado)
+
+# Ejercio 9.3
+# cuenta numeros impares y pares
+# use el tercer argumento de la función range() para hacer una lista de los números impares del 1 al 20. Use un bucle for para imprimir cada número
+numero_impar = list(range(1, 20, 2))
+print(f"arreglo: {numero_impar}")
+for numero in numero_impar:
+    print(f"Numero impar:{numero}")
+# Ejercicio 9.4
+# Haga una lista de los múltiplos de 3 de 3 a 30. Use un ciclo for para imprimir los números en su lista.
+numeros_threes = list(range(3, 30, 3))
+for numero in numeros_threes:
+    print(f"numeros_threes: {numero}")
+# Ejercicio 9.5
+# El cubo de 2 se escribe como 2**3 en Python. Haga una lista de los primeros 10 cubos (es decir, el cubo de cada número entero del 1 al 10) y use un ciclo for para imprimir el valor de cada cubo.
+# lista
+cubos = []
+for numero in range(1, 11):  # numero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    # cubo = [1**3, 2**3, 3**3, 4**3, 5**3, 6**3, 7**3, 8**3, 9**3, 10**3]
+    cubo = numero ** 3
+    cubos.append(cubo)
+for cubo in cubos:
+    print(cubo)
+# lista de comprension
+cubos = [numero ** 3 for numero in range(1, 11)]
+print(cubos)
