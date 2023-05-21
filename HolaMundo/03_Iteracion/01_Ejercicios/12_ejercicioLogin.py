@@ -19,7 +19,7 @@ if new_user == 1:
         print("El usuario fue creado")
         user_list.append(user)
         user_list.append(passw)
-        print("----Menu----")
+        print("-----Menu-----")
         print("1. Ingresar")
         print("2. Salir")
         new_qs = int(input("Desea ver su cuenta?:"))
@@ -58,4 +58,4 @@ if new_user == 2:
         print(f"Usuario: {usuario_logeado}")
         print(f"Clave: {usuario_logeado_pass}")
     else:
-        print("Usuario no encontrado")
+        print("Usuario no encontrado.")
