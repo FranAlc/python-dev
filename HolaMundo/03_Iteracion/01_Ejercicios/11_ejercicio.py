@@ -17,6 +17,6 @@ for numero in range(1, 100 + 1):
                 break
     if es_primo:
         cantidad_primos += 1
-        print(numero)
+        print(f"{numero}")
 
 print("La cantidad de números primos encontrados es:", cantidad_primos)
