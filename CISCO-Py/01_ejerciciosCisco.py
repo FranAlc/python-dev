@@ -3,6 +3,8 @@ for i in range(1, 6):
     print(i, "Mississippi")
 print("¡Listos o no aquí voy!")
 
+## ------------------------------------------------------##
+
 # 2.0 Diseña un programa que use un bucle while y le pida continuamente al usuario que ingrese una palabra a menos que ingrese "chupacabra" como la palabra de output secreta, en cuyo caso el mensaje "Has dejado el bucle con éxito." debe imprimirse en la pantalla y el bucle debe terminar.
 frase_user = input("ingresa una palabra: ")
 
@@ -12,6 +14,7 @@ while (frase_user != "chupacabra"):
     frase_user = input("ingresa una palabra: ")
 print("Has dejado el bucle con exito.")
 
+## ------------------------------------------------------##
 # 3.0 Tu programa debe:
 """
 Pedir al usuario que ingrese una palabra.
@@ -30,6 +33,8 @@ for letra in palabra:
         continue  # Salta a la siguiente iteración del bucle si es una vocal
     resultado += letra
 print("Letras vocales consumidas : ", letra.upper())
+
+## ------------------------------------------------------##
 
 # 4.0 En 1937, un matemático alemán llamado Lothar Collatz formuló una hipótesis intrigante (aún no se ha comprobado) que se puede describir de la siguiente manera:
 """
