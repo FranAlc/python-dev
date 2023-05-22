@@ -23,3 +23,10 @@ Prueba tu programa con los datos que le proporcionamos.
 
 palabra = input("Ingresa una palabra: ")  # ingresa palabra
 print(palabra.upper())  # convertir palabra ingresada a mayuscula
+
+resultado = ""
+for letra in palabra:
+    if letra.upper() in ['A', 'E', 'I', 'O', 'U']:
+        continue  # Salta a la siguiente iteración del bucle si es una vocal
+    resultado += letra
+print("Letras vocales consumidas : ", letra)
