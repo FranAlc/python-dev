@@ -16,10 +16,6 @@ print("Has dejado el bucle con exito.")
 
 ## ------------------------------------------------------##
 
-
-## ------------------------------------------------------##
-
-
 c0 = int(input("ingresa un numero que no sea negativo y que no sea cero: "))
 while c0 > 0 and c0 != 0:
 
