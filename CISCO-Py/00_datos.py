@@ -15,6 +15,20 @@ for i in range(1, 6):
     print("Dentro del bucle.", i)
 print("Fuera del bucle.")
 
+twos = [2 ** i for i in range(8)]
+
+# operadores in y not in
+
+# for i in elemento: print(i) ------> Pregunta si "i" se encuentra dentro de elemento y devuelve True
+# for i not in elemento: print(i) ------> Pregunta si "i" falta dentro de elemento y devuelve True
+
+my_list = [0, 3, 12, 8, 2]
+
+print(5 in my_list)
+print(5 not in my_list)
+print(12 in my_list)
+
+
 # ---------- Indexacion de listas ----------
 numbers = [10, 5, 7, 2, 1]
 # Imprimiendo contenido de la lista original.
@@ -89,6 +103,7 @@ my_list = [10, 8, 6, 4, 2]
 new_list = my_list[1:3]
 print(new_list)
 
+# ---- matrices -----
 
 # ---------- Funciones vs metodos ----------
 # Una función no pertenece a ningún dato - obtiene datos, puede crear nuevos datos y (generalmente) produce un resultado.
