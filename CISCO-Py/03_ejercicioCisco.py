@@ -1,4 +1,4 @@
-# 04 En 1937, un matemático alemán llamado Lothar Collatz formuló una hipótesis intrigante (aún no se ha comprobado) que se puede describir de la siguiente manera:
+# 03 En 1937, un matemático alemán llamado Lothar Collatz formuló una hipótesis intrigante (aún no se ha comprobado) que se puede describir de la siguiente manera:
 """
 1.toma cualquier número entero que no sea negativo y que no sea cero y asígnale el nombre c0;
 2.si es par, evalúa un nuevo c0 como c0 ÷ 2;
