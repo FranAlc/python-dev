@@ -40,8 +40,16 @@ print("Letras vocales consumidas : ", letra.upper())
 """
 1.toma cualquier número entero que no sea negativo y que no sea cero y asígnale el nombre c0;
 2.si es par, evalúa un nuevo c0 como c0 ÷ 2;
-3.de lo contrario, si es impar, evalúe un nuevo  c0  como 3 × c0 + 1;
+3.de lo contrario, si es impar, evalúe un nuevo  c0  como 3 x c0 + 1;
 4.si c0 ≠ 1, salta al punto 2.
 La hipótesis dice que, independientemente del valor inicial de c0, el valor siempre tiende a 1.
 Escribe un programa que lea un número natural y ejecute los pasos anteriores siempre que c0 sea diferente de 1. También queremos que cuente los pasos necesarios para lograr el objetivo. Tu código también debe mostrar todos los valores intermedios de c0.
 """
+c0 = int(input("ingresa un numero que no sea negativo y que no sea cero: "))
+while c0 > 0 and c0 != 0:
+    resultado = c0/2 == 0
+    if (resultado == 0):
+        print(f"El numero {c0} es par.")
+    if (resultado != 0):
+        print(f"{c0} es impar")
+c0 = int(input("ingresa un numero que no sea negativo y que no sea cero: "))
