@@ -15,7 +15,7 @@ for i in range(1, 6):
     print("Dentro del bucle.", i)
 print("Fuera del bucle.")
 
-# Indexacion de listas
+# ---------- Indexacion de listas ----------
 numbers = [10, 5, 7, 2, 1]
 # Imprimiendo contenido de la lista original.
 print("Contenido de la lista:", numbers)
@@ -36,6 +36,9 @@ print("\nPrevio contenido de la lista:", numbers)
 numbers[1] = numbers[4]
 # Imprimiendo el contenido de la lista actual.
 print("Nuevo contenido de la lista:", numbers)
+
+# Ordenar lista de menor a mayor
+# lista.sort()
 
 # append() y insert()
 # list.append(value)
@@ -65,5 +68,27 @@ for i in range(5):
 print(len(numero))
 print(numero)
 
-# Funciones vs metodos
+"""
+Ejercicio practico: 
+1.crea una lista de un elemento llamada list_1;
+2.la asigna a una nueva lista llamada list_2;
+3.cambia el único elemento de list_1;
+4.imprime la list_2;
+"""
+# paso 1:
+list_1 = [1]
+# paso 2:
+list_2 = list_1
+# paso 3:
+list_1[0] = 2
+# paso 4:
+print(list_2)
+
+# Copiando parte de la lista.
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:3]
+print(new_list)
+
+
+# ---------- Funciones vs metodos ----------
 # Una función no pertenece a ningún dato - obtiene datos, puede crear nuevos datos y (generalmente) produce un resultado.
