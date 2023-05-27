@@ -103,17 +103,17 @@ if start == patea[0]:
         print("\nFIN TANDA DE PENALES:")
         print(f"{equipo_futbol1.title()} : {penales1}")
         print(f"\n{equipo_futbol2.title()} : {penales2}")
-        print("*************************************")
-        print(f"\nCAMPEON : {equipo_futbol1} !!!")
-        print("************************************")
+        print("\n*************************************")
+        print(f"\tCAMPEON : {equipo_futbol1} !!!")
+        print("***************************************")
     elif cantidad_goles2 > cantidad_goles1:
         print("\nFIN TANDA DE PENALES:")
         print(f"{equipo_futbol1.title()} : {penales1}")
-        print(f"\n{equipo_futbol2.title()} : {penales2}")
-        print("*************************************")
-        print(f"\nCAMPEON : {equipo_futbol2} !!!")
-        print("************************************")
-    else:
+        print(f"{equipo_futbol2.title()} : {penales2}")
+        print("\n**************************************")
+        print(f"\tCAMPEON : {equipo_futbol2.title()} !!!")
+        print("***************************************")
+    elif cantidad_goles1 == cantidad_goles2:
         # equipo 1
         print(f"\nQuinto penal pateado por: {jugadores1[4]}")
         resultado = random.choice(pelota)
@@ -130,17 +130,17 @@ if start == patea[0]:
             print("\nFIN TANDA DE PENALES:")
             print(f"{equipo_futbol1.title()} : {penales1}")
             print(f"\n{equipo_futbol2.title()} : {penales2}")
-            print("*************************************")
-            print(f"\nCAMPEON : {equipo_futbol1} !!!")
-            print("************************************")
+            print("\n*************************************")
+            print(f"\tCAMPEON : {equipo_futbol1.title()} !!!")
+            print("***************************************")
 
         elif cantidad_goles2 > cantidad_goles1:
             print("\nFIN TANDA DE PENALES:")
             print(f"{equipo_futbol1.title()} : {penales1}")
             print(f"\n{equipo_futbol2.title()} : {penales2}")
-            print("*************************************")
-            print(f"\nCAMPEON : {equipo_futbol2} !!!")
-            print("************************************")
+            print("\n*************************************")
+            print(f"\tCAMPEON : {equipo_futbol2.title()} !!!")
+            print("***************************************")
 
 elif start == patea[1]:
     # equipo 1
@@ -198,17 +198,17 @@ elif start == patea[1]:
         print("\nFIN TANDA DE PENALES:")
         print(f"{equipo_futbol1.title()} : {penales2}")
         print(f"\n{equipo_futbol2.title()} : {penales1}")
-        print("*************************************")
-        print(f"\nCAMPEON : {equipo_futbol1} !!!")
-        print("************************************")
+        print("\n*************************************")
+        print(f"\tCAMPEON : {equipo_futbol1.title()} !!!")
+        print("***************************************")
     elif cantidad_goles2 > cantidad_goles1:
         print("\nFIN TANDA DE PENALES:")
         print(f"{equipo_futbol1.title()} : {penales2}")
         print(f"\n{equipo_futbol2.title()} : {penales1}")
-        print("*************************************")
-        print(f"\nCAMPEON : {equipo_futbol2} !!!")
-        print("************************************")
-    else:
+        print("\n****************************************")
+        print(f"\tCAMPEON : {equipo_futbol2.title()} !!!")
+        print("******************************************")
+    elif cantidad_goles1 == cantidad_goles2:
         # equipo 1
         print(f"\nQuinto penal pateado por: {jugadores2[4]}")
         resultado = random.choice(pelota)
@@ -225,14 +225,14 @@ elif start == patea[1]:
             print("\nFIN TANDA DE PENALES:")
             print(f"{equipo_futbol1.title()} : {penales2}")
             print(f"\n{equipo_futbol2.title()} : {penales1}")
-            print("*************************************")
-            print(f"\nCAMPEON : {equipo_futbol2} !!!")
+            print("\n*************************************")
+            print(f"\tCAMPEON : {equipo_futbol2.title()} !!!")
             print("************************************")
 
         elif cantidad_goles1 > cantidad_goles2:
             print("\nFIN TANDA DE PENALES:")
             print(f"{equipo_futbol1.title()} : {penales2}")
             print(f"\n{equipo_futbol2.title()} : {penales1}")
-            print("*************************************")
-            print(f"\nCAMPEON : {equipo_futbol1} !!!")
+            print("\n*************************************")
+            print(f"\tCAMPEON : {equipo_futbol1.title()} !!!")
             print("************************************")
