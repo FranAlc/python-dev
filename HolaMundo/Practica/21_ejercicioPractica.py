@@ -126,7 +126,7 @@ if start == patea[0]:
         penales2.append(resultado)
 
         # contar la cantidad de goles
-        if cantidad_goles1 > cantidad_goles2:
+        if penales1[4] < penales2[4]:
             print("\nFIN TANDA DE PENALES:")
             print(f"{equipo_futbol1.title()} : {penales1}")
             print(f"\n{equipo_futbol2.title()} : {penales2}")
@@ -134,7 +134,7 @@ if start == patea[0]:
             print(f"\tCAMPEON : {equipo_futbol1.title()} !!!")
             print("***************************************")
 
-        elif cantidad_goles2 > cantidad_goles1:
+        elif penales2[4] < penales1[4]:
             print("\nFIN TANDA DE PENALES:")
             print(f"{equipo_futbol1.title()} : {penales1}")
             print(f"\n{equipo_futbol2.title()} : {penales2}")
@@ -221,7 +221,7 @@ elif start == patea[1]:
         penales2.append(resultado)
 
         # contar la cantidad de goles
-        if cantidad_goles2 > cantidad_goles1:
+        if penales2[4] < penales1[4]:
             print("\nFIN TANDA DE PENALES:")
             print(f"{equipo_futbol1.title()} : {penales2}")
             print(f"\n{equipo_futbol2.title()} : {penales1}")
@@ -229,7 +229,7 @@ elif start == patea[1]:
             print(f"\tCAMPEON : {equipo_futbol2.title()} !!!")
             print("************************************")
 
-        elif cantidad_goles1 > cantidad_goles2:
+        elif penales1[4] < penales2[4]:
             print("\nFIN TANDA DE PENALES:")
             print(f"{equipo_futbol1.title()} : {penales2}")
             print(f"\n{equipo_futbol2.title()} : {penales1}")
