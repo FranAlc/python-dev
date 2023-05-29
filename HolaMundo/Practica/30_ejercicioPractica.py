@@ -217,6 +217,7 @@ suma()
 
 # usar variables de afuera de la funcion
 
+
 def resta(num1, num3):
     r = num1 - num3
     return print(r)
@@ -225,3 +226,20 @@ def resta(num1, num3):
 num1 = int(input("numero: "))
 num3 = int(input("numero: "))
 resta(num1, num3)
+
+
+def area_circulo(radio, pi):
+    # retorna una tupla , se recomienda un max de 3 valores
+    return pi * (radio**2), "este es el area de un circulo"
+
+
+radio = int(input("radio: "))
+pi = 3.1416
+
+imprimir_resultado = area_circulo(radio, pi)  # >>retorna los dos valores
+# imprimir_resultado, mensaje = area_circulo(radio, pi) >> retorna los dos valores pero se puede extraer un valor en una variable, pasarla de tupla a lista y modificarla si se lo desea
+# mensaje = (area_circulo(radio, pi)) >> retorna solamente el mensaje y no el resultado de (pi * radio^2)
+# imprimir_resultado, _ = area_circulo(radio, pi) >> retorna solamente el resultado de (pi * radio^2) y no el mensaje ya que se coloco un _
+
+print(imprimir_resultado)
+# print(mensaje)
