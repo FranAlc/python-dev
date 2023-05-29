@@ -84,3 +84,8 @@ lenguajes = 'Python-Javascript-C-C++'
 listado_lenguajes = lenguajes.split("-")
 
 print(listado_lenguajes)
+
+lenguajes = ["Python", "Javascript", "C++", "Java"]
+
+string_lenguajes = ' '.join(lenguajes)
+print(string_lenguajes)
