@@ -152,7 +152,25 @@ else:
 # en caso que no se encuentre devuelve None
 valor = dicc.get('d')
 print("valor:", valor)
-# setdeafult
+# setdefault
 # en caso que no exista , la crea y añade con el valor escrito
-valor = dicc.set('e', 5)
+valor = dicc.setdefault('e', 5)
 print("valor:", valor)
+
+
+# Llaves, items y valores
+# keys
+user = {'nombre': 'franco', 'apellido': 'galan'}
+key = user.keys()
+print("key:", key)  # muestra los elementos dentro de una lista
+
+key = tuple(user.keys())  # puedo convertirlo en tupla o en lista
+print("key:", key)
+key = list(user.keys())  # lista
+print("key:", key)
+# values
+valores = tuple(user.values())
+print("valores:", valores)
+# elementos
+elementos = tuple(user.items())
+print("elementos:", elementos)
