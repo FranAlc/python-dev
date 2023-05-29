@@ -121,7 +121,7 @@ usuario = {
     "cursos": ["CISCO", "Codigo facilito", "Python Data Science IBM"]
 }
 
-# Agregar elementos a nuestro diccionario
+# AGREGAR elementos a nuestro diccionario
 elementos = {}  # si se duplican las llaves se añade solo el ultimo valor asignado
 
 elementos['nombre'] = "Daniel"
@@ -131,3 +131,28 @@ print(elementos)
 
 # cuenta la cantidad de elementos dentro de nuestro diccionario
 print(len(elementos))
+
+# elementos , obtener valores
+dicc = {
+    'a': 1,
+    'b': 2,
+    'c': 3,
+    'd': 4
+}
+valor = dicc['d']
+print(valor)
+print('b' in dicc)  # muestra si se encuentra 'b' devolviendo True o False
+
+if 'a' in dicc:  # declara si se encuentra o no un elemento dentro del diccionario
+    print(f"Existe 'a' y su valor es: {dicc['a']}")
+else:
+    print("No se encuentra")
+
+# get
+# en caso que no se encuentre devuelve None
+valor = dicc.get('d')
+print("valor:", valor)
+# setdeafult
+# en caso que no exista , la crea y añade con el valor escrito
+valor = dicc.set('e', 5)
+print("valor:", valor)
