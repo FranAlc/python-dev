@@ -89,3 +89,15 @@ lenguajes = ["Python", "Javascript", "C++", "Java"]
 
 string_lenguajes = ' '.join(lenguajes)
 print(string_lenguajes)
+
+# justificar texto
+mensaje = "Hola mundo!"
+mensaje = mensaje.ljust(20)  # Alinear a la izquierda
+print(f"\n{mensaje}.")
+
+mensaje = mensaje.rjust(20)  # Alinear a la Derecha
+print(f"\n.{mensaje}")
+
+# Centrar "-----Hola Mundo!-----" 5 de un lado y 5 del otro
+mensaje = mensaje.center(10)
+print(f"\n-{mensaje}-")
