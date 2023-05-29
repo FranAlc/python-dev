@@ -68,12 +68,19 @@ datos.append(num)
 
 print(f"\n{datos}")
 
-# uso de zip
+# ZIP
 
 lista = [1, 2, 3, 4, 5]
-
+lista2 = [100, 200, 300, 400, 500]
 tupla = (10, 20, 30, 40, 50)
 
-resultado = zip(tupla, lista)
+resultado = zip(tupla, lista, lista2)
 resultado = tuple(resultado)
 print(f"\n{resultado}")
+print(resultado[0][2:])
+
+# Strings con listados
+lenguajes = 'Python-Javascript-C-C++'
+listado_lenguajes = lenguajes.split("-")
+
+print(listado_lenguajes)
