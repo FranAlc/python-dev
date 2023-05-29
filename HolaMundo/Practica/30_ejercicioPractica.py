@@ -100,4 +100,34 @@ print(f"\n.{mensaje}")
 
 # Centrar "-----Hola Mundo!-----" 5 de un lado y 5 del otro
 mensaje = mensaje.center(10)
-print(f"\n-{mensaje}-")
+print(f"\n{mensaje}")
+
+# DICCIONARIOS
+diccionario = {}
+diccionario = dict()
+
+# {llave : el valor de el cual queremos asociar. }
+
+diccionario = {"total": 66}
+diccionario = {"total": 66, "descuento": True, "subtotal": 15}
+usuario = {
+    "nombre": "Franco",
+    "apellido": "Galan",
+    "edad": 20,
+    "skills": {
+        "Programacion": True,
+        "DB": True
+    },
+    "cursos": ["CISCO", "Codigo facilito", "Python Data Science IBM"]
+}
+
+# Agregar elementos a nuestro diccionario
+elementos = {}  # si se duplican las llaves se añade solo el ultimo valor asignado
+
+elementos['nombre'] = "Daniel"
+elementos[(1, 2, 3)] = "la llave es una tupla"
+elementos['nombre'] = "Franco"  # actualiza el nombre
+print(elementos)
+
+# cuenta la cantidad de elementos dentro de nuestro diccionario
+print(len(elementos))
