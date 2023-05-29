@@ -227,6 +227,8 @@ num1 = int(input("numero: "))
 num3 = int(input("numero: "))
 resta(num1, num3)
 
+# def area_circulo(radio,pi = 3.14) >> los parametros con valores se encuentran a la derecha y no a la izquierda sino devuelve un error
+
 
 def area_circulo(radio, pi):
     # retorna una tupla , se recomienda un max de 3 valores
@@ -237,9 +239,13 @@ radio = int(input("radio: "))
 pi = 3.1416
 
 imprimir_resultado = area_circulo(radio, pi)  # >>retorna los dos valores
+
 # imprimir_resultado, mensaje = area_circulo(radio, pi) >> retorna los dos valores pero se puede extraer un valor en una variable, pasarla de tupla a lista y modificarla si se lo desea
 # mensaje = (area_circulo(radio, pi)) >> retorna solamente el mensaje y no el resultado de (pi * radio^2)
+
 # imprimir_resultado, _ = area_circulo(radio, pi) >> retorna solamente el resultado de (pi * radio^2) y no el mensaje ya que se coloco un _
+
+#imprimir_resultado = area_circulo(pi=3.14,radio=10) >> se pueden dar vuelta los parametros con sus respectivos valores
 
 print(imprimir_resultado)
 # print(mensaje)
