@@ -183,7 +183,22 @@ del user['apellido']
 print("user:", user)  # borra apellido
 print(len(user))
 # 2 pop()
-valor = user.pop('b')
-print("pop:", valor)
+# valor = user.pop('b')
+# print("pop:", valor)
 # 3 metodo clear
 user.clear()  # borra todos los elementos del diccionario user{}
+
+
+# Condicionales - Ternario
+
+calificacion = 10
+color = None
+
+if calificacion >= 7:
+    color = "verde"
+else:
+    color = "rojo"
+print(calificacion)
+print(color)
+
+color = 'verde' if calificacion >= 7 else "rojo"
