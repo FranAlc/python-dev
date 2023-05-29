@@ -174,3 +174,16 @@ print("valores:", valores)
 # elementos
 elementos = tuple(user.items())
 print("elementos:", elementos)
+
+# ELIMINAR elementos
+# ingresar la llave del elemento que deseo eliminar
+user = {'nombre': 'franco', 'apellido': 'galan'}
+# 1 del
+del user['apellido']
+print("user:", user)  # borra apellido
+print(len(user))
+# 2 pop()
+valor = user.pop('b')
+print("pop:", valor)
+# 3 metodo clear
+user.clear()  # borra todos los elementos del diccionario user{}
