@@ -202,3 +202,26 @@ print(calificacion)
 print(color)
 
 color = 'verde' if calificacion >= 7 else "rojo"
+
+
+# Funciones
+
+def suma():
+    num = int(input("numero: "))
+    num2 = int(input("numero: "))
+    r = num + num2
+    return print(r)
+
+
+suma()
+
+# usar variables de afuera de la funcion
+
+def resta(num1, num3):
+    r = num1 - num3
+    return print(r)
+
+
+num1 = int(input("numero: "))
+num3 = int(input("numero: "))
+resta(num1, num3)
