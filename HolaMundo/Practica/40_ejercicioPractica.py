@@ -22,6 +22,7 @@ def pares():  # Lazy iterator
 
 generador = pares()
 
+# Forma 1
 # 1. Generar elementos conformes a demanda, siempre que los necesitemos
 # 2. Ventaja de uso de memoria
 print(next(generador))
@@ -29,3 +30,12 @@ print(next(generador))
 print("ejecutamos codigo normalmente")
 
 print(next(generador))
+
+# Forma 2 dando uso de try y except
+generador = pares()
+while True:
+    try:
+        par = next(generador)
+    except StopIteration:
+        print("Finalizo el generador")
+        break
