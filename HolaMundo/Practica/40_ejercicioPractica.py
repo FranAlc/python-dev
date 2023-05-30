@@ -1,5 +1,5 @@
 # Numeros pares >> GENERADORES
-
+"""
 def pares():  # convierte a Generador >> Lazy iterator
     for num in range(0, 100, 2):
         yield num  # a diferencia de return, el yield sirve para generadores, suspenderemos de forma momentanea la funcion
@@ -11,3 +11,21 @@ print(pares())  # ahora devuelve un objeto
 
 for par in pares():  # llamo a la funcion pares()
     print(par)
+
+"""
+
+
+def pares():  # Lazy iterator
+    for num in range(0, 100, 2):
+        yield num  # suspende ejecucion
+
+
+generador = pares()
+
+# 1. Generar elementos conformes a demanda, siempre que los necesitemos
+# 2. Ventaja de uso de memoria
+print(next(generador))
+
+print("ejecutamos codigo normalmente")
+
+print(next(generador))
