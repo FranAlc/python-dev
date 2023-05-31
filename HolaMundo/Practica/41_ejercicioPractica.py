@@ -23,3 +23,8 @@ def suma(num1, num2):
     En caso que el resultado mencionado anteriormente no se cumpla saldra un error (linea 19)
     """
     return num1 + num2
+
+
+print(suma.__doc__)  # muestra la documentacion dentro de la funcion
+# Funcion help, puede realizar lo mismo
+# print(help(suma))
