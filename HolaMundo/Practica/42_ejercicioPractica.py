@@ -4,3 +4,14 @@ class Usuario:
 
 franco = Usuario()
 print(franco)
+
+
+class User:
+    username = "franco"
+    email = ""
+
+
+User.username = "franco 2"
+User.email = "franco@gmail.com"
+print(User.username)
+print(User.email)
