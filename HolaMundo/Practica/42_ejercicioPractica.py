@@ -1,3 +1,4 @@
+"""
 # Creacion de clase
 class Usuario:
     pass  # indica que el bloque no realizara ningun tipo de accion
@@ -31,3 +32,22 @@ user1.username = "Franco"
 user1.email = "franco_02@gmail.com"
 user1.password = "pass123"  # de esta forma añado un atributo al objeto User()
 print(user1.__dict__)  # __dict__ guarda los atributos dentro de un diccionario
+"""
+
+
+class Username:
+    def inicializar(self, username, password):  # metodo
+        # Añadimos atributos al objeto
+        self.username = username
+        self.password = password
+
+
+user1 = Username()
+user2 = Username()
+
+
+user1.inicializar("Franco", "12345")
+user2.inicializar("Manuel", "123pass")
+
+print(user1.__dict__)
+print(user2.__dict__)
