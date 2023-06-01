@@ -41,46 +41,49 @@ def denegar():
     return print("No se reconoce el numero ingresado")
 
 
-num1 = int(input("Digite un numero entero: "))
-num2 = int(input("Digite un segundo numero entero: "))
-
-
-print("\n - - - - - - - - - - - - -")
-print("\t Menu de opciones")
-print("1- SUMAR")
-print("2- RESTAR")
-print("3- MULTIPLICAR")
-print("4- DIVIDIR")
-
-opcion = int(input("\nDigite una opcion: "))
-
-while (opcion <= 4 and opcion >= 1):
-    if opcion == 1:
-        sumar = suma(num1, num2)
-        print("RESPUESTA:")
-        print("Suma: ", sumar)
-
-    elif opcion == 2:
-        restar = resta(num1, num2)
-        print("RESPUESTA:")
-        print("Resta: ", restar)
-
-    elif opcion == 3:
-        multiplicar = multiplicacion(num1, num2)
-        print("RESPUESTA:")
-        print("Multiplicacion: ", multiplicar)
-    elif opcion == 4:
-        dividir = resta(num1, num2)
-        print("RESPUESTA:")
-        print("Dividision: ", dividir)
-    else:
-        print(denegar())
-
+def programa():
     print("\n - - - - - - - - - - - - -")
     print("\t Menu de opciones")
     print("1- SUMAR")
     print("2- RESTAR")
     print("3- MULTIPLICAR")
     print("4- DIVIDIR")
-
     opcion = int(input("\nDigite una opcion: "))
+    while (opcion <= 4 and opcion >= 1):
+        if opcion == 1:
+            sumar = suma(num1, num2)
+            print("\nRESPUESTA:")
+            print("Suma: ", sumar)
+
+        elif opcion == 2:
+            restar = resta(num1, num2)
+            print("\nRESPUESTA:")
+            print("Resta: ", restar)
+
+        elif opcion == 3:
+            multiplicar = multiplicacion(num1, num2)
+            print("\nRESPUESTA:")
+            print("Multiplicacion: ", multiplicar)
+        elif opcion == 4:
+            dividir = resta(num1, num2)
+            print("\nRESPUESTA:")
+            print("Dividision: ", dividir)
+        else:
+            print(denegar())
+
+        print("\n - - - - - - - - - - - - -")
+        print("\t Menu de opciones")
+        print("1- SUMAR")
+        print("2- RESTAR")
+        print("3- MULTIPLICAR")
+        print("4- DIVIDIR")
+
+        opcion = int(input("\nDigite una opcion: "))
+
+
+num1 = int(input("Digite un numero entero: "))
+num2 = int(input("Digite un segundo numero entero: "))
+
+programa()
+
+print("\nFin del programa.")
