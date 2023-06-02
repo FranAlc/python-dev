@@ -37,12 +37,49 @@ def puntaje_numerico():
     cuadrante_1_2 = 50
     cuadrante_3_4 = 40
     centro = 100
-
+    resultado3 = 0
+    contador = 0
+    contador2 = 0
+    contador_central = 0
+    print("¿Donde disparo el participante?:")
     for i in range(1, 6):
         numerico = int(input("\nNumero: "))
-        if numerico == 1:
-            cuadrante_1_2 += 1
-    print(f"Puntuacion: {numerico}")
+        if numerico == 1 or numerico == 2:
+            contador += 1
+            resultado = cuadrante_1_2 * contador
+            # print("1 y 2: ", resultado)
+        elif numerico == 3 or numerico == 4:
+            contador2 += 1
+            resultado2 = cuadrante_3_4 * contador2
+            # print("3 y 4: ", resultado2)
+        elif numerico == 0:
+            contador_central += 1
+            resultado3 = centro * contador_central
+        else:
+            print("El numero ingresado no corresponde.")
+            print("Vuelva a ingresar los valores.")
+            for i in range(1, 6):
+                numerico = int(input("\nNumero: "))
+                if numerico == 1 or numerico == 2:
+                    contador += 1
+                    resultado = cuadrante_1_2 * contador
+                    # print("1 y 2: ", resultado)
+                elif numerico == 3 or numerico == 4:
+                    contador2 += 1
+                    resultado2 = cuadrante_3_4 * contador2
+                    # print("3 y 4: ", resultado2)
+                elif numerico == 0:
+                    contador_central += 1
+                    resultado3 = centro * contador_central
+                else:
+                    print("El numero ingresado no corresponde.")
+                    print("Vuelva a ingresar los valores.")
+
+    puntaje_final = resultado + resultado2 + resultado3
+    print("-----------RESULTADO-----------")
+    print(f"Puntaje final: {puntaje_final}")
+    print(f"Disparos: {i}")
+    print(f"Disparos al CENTRO: {contador_central}")
 
 
 def cuadrante():
@@ -54,10 +91,12 @@ def cuadrante():
     elif (opcion == 2):
         repeticion_disparo()
     else:
-        print("tiro afuera")
+        print("Tiro afuera.")
 
 
 # main
+puntuacion_ganadora = 0
+
 print("\n----------------------------")
 print("CONCURSO DE TIRO AL BLANCO")
 print("----------------------------")
@@ -74,10 +113,27 @@ print("   3    -    4")
 print("\t-")
 print("\t-")
 
-participante = int(input("Digite el numero que lo identifica: "))
+
+participante = int(input("\nDigite el numero que lo identifica: "))
 
 while participante >= 1:
     cuadrante()
-    print(f"Participante: #{participante}")
-    participante = int(input("Digite el numero que lo identifica: "))
+    print(f"PARTICIPANTE: #{participante}")
+    print(f"------------------------------")
+    print("\n-----------------------------")
+    print("CONCURSO DE TIRO AL BLANCO")
+    print("----------------------------")
+    print("Cuadrantes 1 y 2: 50 puntos")
+    print("Cuadrantes 3 y 4: 40 puntos")
+    print("Centro: 100\n")
+    print("\t-")
+    print("\t-")
+    print("   2    -    1")
+    print("\t-")
+    print("--------0--------")
+    print("\t- ")
+    print("   3    -    4")
+    print("\t-")
+    print("\t-")
+    participante = int(input("\nDigite el numero que lo identifica: "))
 print("\nFin del programa.")
