@@ -22,13 +22,27 @@ c. Calcular y mostrar la cantidad total de disparos en el centro (de todos los p
 """
 
 
-# funciones
+# FUNCIONES
+def repeticion_disparo():
+    print("1- Numerico.")
+    print("2- Ejes")
+    opcion = int(input("Digite una opcion: "))
+    if (opcion == 1):
+        puntaje_numerico()
+    elif (opcion == 2):
+        repeticion_disparo()
 
-def puntaje():
+
+def puntaje_numerico():
     cuadrante_1_2 = 50
     cuadrante_3_4 = 40
     centro = 100
-    print("puntaje: ")
+
+    for i in range(1, 6):
+        numerico = int(input("\nNumero: "))
+        if numerico == 1:
+            cuadrante_1_2 += 1
+    print(f"Puntuacion: {numerico}")
 
 
 def cuadrante():
@@ -36,13 +50,9 @@ def cuadrante():
     print("2- Ejes")
     opcion = int(input("Digite una opcion: "))
     if (opcion == 1):
-        puntaje()
-    if (opcion == 2):
-        # vuelve a tirar
-        while opcion == 2:
-            print("1- Numerico.")
-            print("2- Ejes")
-            opcion = int(input("Digite una opcion: "))
+        puntaje_numerico()
+    elif (opcion == 2):
+        repeticion_disparo()
     else:
         print("tiro afuera")
 
@@ -68,4 +78,6 @@ participante = int(input("Digite el numero que lo identifica: "))
 
 while participante >= 1:
     cuadrante()
+    print(f"Participante: #{participante}")
     participante = int(input("Digite el numero que lo identifica: "))
+print("\nFin del programa.")
