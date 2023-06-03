@@ -76,8 +76,6 @@ def cuadrante():
 
 # main
 
-cant_jugadores = int(input("Digite la cantidad de jugadores: "))
-
 for i in range(1, cant_jugadores):
 
     print("\n----------------------------")
@@ -101,7 +99,6 @@ for i in range(1, cant_jugadores):
     while participante >= 1:
         cuadrante()
         print(f"PARTICIPANTE: #{participante}")
-        print(f"MAYOR PUNTAJE: {puntuacion_ganadora}")
         print(f"------------------------------")
         print("\n-----------------------------")
         print("CONCURSO DE TIRO AL BLANCO")
