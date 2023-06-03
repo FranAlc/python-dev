@@ -5,7 +5,7 @@ Cada participante efectúa 5 disparos, registrándose las coordenadas X-Y de cad
 
 - No considere disparos sobre los ejes, pero sí en el centro (si es sobre los ejes las coordenadas
 deberán volver a ingresarse).
-- Para determinar el cuadrante utilizar la función CUADRANTE que reciba las dos coordenadas y
+- Para determinar el cuadrante utilizar la función CUADRANTE que reciba las cordenadas y
 retorne el cuadrante al cual pertenece (1 a 4) y 0 para indicar un tiro en el centro.
 
 Para calcular el puntaje utilizar la función PUNTAJE que reciba 5 parámetros que representan la cantidad
@@ -17,20 +17,15 @@ escala:
 
 Determinar:
 a. El puntaje obtenido por cada participante, detallando cuantos disparos realizó en cada cuadrante.
-b. Mostrar el número del participante ganador y el puntaje obtenido.
+b. Mostrar el número del participante y el puntaje obtenido.
 c. Calcular y mostrar la cantidad total de disparos en el centro (de todos los participantes)
 """
 
 
 # FUNCIONES
 def repeticion_disparo():
-    print("1- Numerico.")
-    print("2- Ejes")
-    opcion = int(input("Digite una opcion: "))
-    if (opcion == 1):
-        puntaje_numerico()
-    elif (opcion == 2):
-        repeticion_disparo()
+    print("Vuelva a tirar..")
+    puntaje_numerico()
 
 
 def puntaje_numerico():
@@ -44,6 +39,7 @@ def puntaje_numerico():
     print("¿Donde disparo el participante?:")
     for i in range(1, 6):
         numerico = int(input("\nNumero: "))
+
         if numerico == 1 or numerico == 2:
             contador += 1
             resultado = cuadrante_1_2 * contador
@@ -57,23 +53,6 @@ def puntaje_numerico():
             resultado3 = centro * contador_central
         else:
             print("El numero ingresado no corresponde.")
-            print("Vuelva a ingresar los valores.")
-            for i in range(1, 6):
-                numerico = int(input("\nNumero: "))
-                if numerico == 1 or numerico == 2:
-                    contador += 1
-                    resultado = cuadrante_1_2 * contador
-                    # print("1 y 2: ", resultado)
-                elif numerico == 3 or numerico == 4:
-                    contador2 += 1
-                    resultado2 = cuadrante_3_4 * contador2
-                    # print("3 y 4: ", resultado2)
-                elif numerico == 0:
-                    contador_central += 1
-                    resultado3 = centro * contador_central
-                else:
-                    print("El numero ingresado no corresponde.")
-                    print("Vuelva a ingresar los valores.")
 
     puntaje_final = resultado + resultado2 + resultado3
     print("-----------RESULTADO-----------")
@@ -83,8 +62,9 @@ def puntaje_numerico():
 
 
 def cuadrante():
-    print("1- Numerico.")
-    print("2- Ejes")
+    print("El participante dio al tablero o sobre un eje?")
+    print("1- Tablero.")
+    print("2- Ejes.")
     opcion = int(input("Digite una opcion: "))
     if (opcion == 1):
         puntaje_numerico()
@@ -95,32 +75,12 @@ def cuadrante():
 
 
 # main
-puntuacion_ganadora = 0
 
-print("\n----------------------------")
-print("CONCURSO DE TIRO AL BLANCO")
-print("----------------------------")
-print("Cuadrantes 1 y 2: 50 puntos")
-print("Cuadrantes 3 y 4: 40 puntos")
-print("Centro: 100\n")
-print("\t-")
-print("\t-")
-print("   2    -    1")
-print("\t-")
-print("--------0--------")
-print("\t- ")
-print("   3    -    4")
-print("\t-")
-print("\t-")
+cant_jugadores = int(input("Digite la cantidad de jugadores: "))
 
+for i in range(1, cant_jugadores):
 
-participante = int(input("\nDigite el numero que lo identifica: "))
-
-while participante >= 1:
-    cuadrante()
-    print(f"PARTICIPANTE: #{participante}")
-    print(f"------------------------------")
-    print("\n-----------------------------")
+    print("\n----------------------------")
     print("CONCURSO DE TIRO AL BLANCO")
     print("----------------------------")
     print("Cuadrantes 1 y 2: 50 puntos")
@@ -135,5 +95,28 @@ while participante >= 1:
     print("   3    -    4")
     print("\t-")
     print("\t-")
+
     participante = int(input("\nDigite el numero que lo identifica: "))
-print("\nFin del programa.")
+
+    while participante >= 1:
+        cuadrante()
+        print(f"PARTICIPANTE: #{participante}")
+        print(f"MAYOR PUNTAJE: {puntuacion_ganadora}")
+        print(f"------------------------------")
+        print("\n-----------------------------")
+        print("CONCURSO DE TIRO AL BLANCO")
+        print("----------------------------")
+        print("Cuadrantes 1 y 2: 50 puntos")
+        print("Cuadrantes 3 y 4: 40 puntos")
+        print("Centro: 100\n")
+        print("\t-")
+        print("\t-")
+        print("   2    -    1")
+        print("\t-")
+        print("--------0--------")
+        print("\t- ")
+        print("   3    -    4")
+        print("\t-")
+        print("\t-")
+        participante = int(input("\nDigite el numero que lo identifica: "))
+    print("\nFin del programa.")
