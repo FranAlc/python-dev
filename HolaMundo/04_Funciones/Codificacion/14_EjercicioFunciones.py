@@ -6,8 +6,8 @@ Digitar una funcion llamada min_in_list() que devuelva el numero menor dentro de
 
 
 def min_in_list(lista):
-    numero_mayor = min(lista)
-    return numero_mayor
+    numero_menor = min(lista)
+    return numero_menor
 
 
 # main
