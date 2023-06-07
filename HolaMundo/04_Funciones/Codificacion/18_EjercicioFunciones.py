@@ -23,11 +23,23 @@ def multip(lista_num):
         producto *= elemento
     return print(f"La multiplicacion de los numeros es: {producto}")
 
+# dividir
+
+
+def dividir(lista_num):
+    acumulador = 0
+    contador = 0
+    for elementos in lista_num:
+        acumulador += elementos
+        contador += 1
+        resultado = acumulador / contador
+    print(f"La division de los numeros es: {resultado}")
+
 
 # main
 suma = [1, 2, 3, 4]
 multiplicacion = [1, 2, 3, 4]
-
+division = [1, 2, 3, 4]
 
 # suma
 print(suma)
@@ -35,3 +47,6 @@ sumar(suma)
 # multiplicacion
 print(multiplicacion)
 multip(multiplicacion)
+# division
+print(division)
+dividir(division)
