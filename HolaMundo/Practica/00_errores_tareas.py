@@ -1,4 +1,4 @@
-# 1. Tipos de errores
+# 1. Tipos de errores.
 # Anotacion de los siguientes errores que se presentan en un programa
 """
 NameError -> 1. Usar sin declarar una variable. // 2. Caso incorrecto, error tipografico // 3. Usar sin importar una funcion externa.
@@ -7,4 +7,11 @@ IndexError -> Ocurre al extraer un elemento de un objeto iterable. Entrada de í
 TypeError -> Operador. Ocurre cuando el metodo no coincide con el tipo requerido. Cuando arg no se inserta en la llamada de funcion.
 KeyError -> Cuando no hay una clave correspondiente en el dict.
 ModuleNotFoundError -> Cuando no existe un modulo con ese nombre. Se debe comprobar si hay errores tipograficos o asegurarse de que el directorio este bien // Tal vez el entorno virtual esta mal.
+"""
+
+# 2. Anotacion de "vectores".
+"""
+Listas -> Mutables // Quiere decir que se puede -> 1.Modificar elementos // 2.Agregar elementos // 3.Eliminar elementos // 4.Organizar elementos
+Tuplas ->  Inmutables
+Diccionarios -> Mutables
 """
