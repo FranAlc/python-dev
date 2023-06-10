@@ -14,4 +14,10 @@ ModuleNotFoundError -> Cuando no existe un modulo con ese nombre. Se debe compro
 Listas -> Mutables // Quiere decir que se puede -> 1.Modificar elementos // 2.Agregar elementos // 3.Eliminar elementos // 4.Organizar elementos
 Tuplas ->  Inmutables
 Diccionarios -> Mutables
+
+3. Operadores:
+Comparacion -> == , != , >, >=, <, <=
+Identidad -> is, is not
+Membresia -> in, not in
+bit -> &, |, ^, <<, >>
 """
