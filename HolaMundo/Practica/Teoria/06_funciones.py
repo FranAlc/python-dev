@@ -1,6 +1,10 @@
 """
 #FUNCIONES -> def function(argumentos): codigo return(retorno)
 
+def function(parametros):
+    return(retorno)
+function(argumentos)    
+
 Algunos principios del uso de funciones:
 -Una funcion siempre debe devolver un valor.
 -Verificar que la cantidad de parametros con que invocamos la funcion son los mismos que se definieron al momento de crear la funcion.
@@ -47,5 +51,13 @@ suma(5,3,2) >> 10
 Parametro tupla -> def suma(*numeros) -> suma(1, 5, 6) 
 Parametro lista -> def suma(numeros) > suma([1, 5, 6])
 
+Retornar Funciones-> def saludar():                         #Funcion principal
+                        def mostrar_mensaje():              #Funcion anidada
+                            print("Hola, como estas?")      #Mensaje dentro de la funcion anidada
+                        return mostrar_mensaje              #Se aclara el nombre de la funcion que se quiere retornar.
+                    respuesta = saludar()                   #Se guarda la funcion principal en una variable.
+                    respuesta()                             #La variable pasa a ser una funcion la cual se puede mostrar de esta manera.
 
+
+                    
 """
