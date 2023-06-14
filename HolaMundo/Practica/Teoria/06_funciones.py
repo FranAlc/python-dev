@@ -58,6 +58,19 @@ Retornar Funciones-> def saludar():                         #Funcion principal
                     respuesta = saludar()                   #Se guarda la funcion principal en una variable.
                     respuesta()                             #La variable pasa a ser una funcion la cual se puede mostrar de esta manera.
 
-
+Decoradores -> 1. La funcion principal (Decorador) // 2. La funcion a decorar // 3. La funcion decorada
+                def funcion_1(funcion_2): #El parametro toma la accion de saludar()
                     
+                    def funcion_3():
+                        funcion_2() #Muestra la funcion decorada.
+                    return funcion_3
+
+                @funcion_1 #Recibe como parametro la funcion que va a decorar                        
+                def saludar():
+                    print("Hola")
+                saludar()    
+#1. Ejercutar codigo antes o despues de ser llamado. // 2. Recibe como argumento una funcion y retorna una funcion. //
+#3. Extiende funcionalidades a una funcion.
+
+
 """
