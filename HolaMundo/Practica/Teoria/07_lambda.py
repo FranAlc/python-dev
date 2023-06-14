@@ -11,4 +11,7 @@ Funcion anonima -> (lambda x, y: x + y)(2, 3) >> 5
 #La función lambda anterior se define y luego se llama inmediatamente con dos argumentos (2 y 3). 
 #Devuelve el valor 5, que es la suma de los argumentos.
              
+Sintaxis de una función Lambda -> lambda argumentos: expresion
+#Las funciones Lambda pueden tener cualquier número de argumentos, pero solo una expresión.
+
 """
