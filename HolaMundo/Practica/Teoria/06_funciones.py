@@ -72,5 +72,8 @@ Decoradores -> 1. La funcion principal (Decorador) // 2. La funcion a decorar //
 #1. Ejercutar codigo antes o despues de ser llamado. // 2. Recibe como argumento una funcion y retorna una funcion. //
 #3. Extiende funcionalidades a una funcion.
 
+Generadores -> Reemplazar return por yield. 
+#yield permite retornar valores sin que la funcion finalice unicamente pausando su ejecucion para que posteriormente pueda renaudarse desde el punto donde se quedo.
+#Lazy iterator
 
 """
