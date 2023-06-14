@@ -20,4 +20,11 @@ Comparacion -> == , != , >, >=, <, <=
 Identidad -> is, is not
 Membresia -> in, not in
 bit -> &, |, ^, <<, >>
+
+4. Iteradores
+__iter__(): Devuelve un objeto iterador.
+__next__(): 1. Devuelve el siguiente valor para el iterable.
+            2. Cuando usamos un bucle for para atravesar cualquier objeto iterable, internamente usa el método iter() para obtener un objeto iterador.
+for -> 1. for x,a in d: //2. for x,a in zip(x,a) //range()
+
 """
