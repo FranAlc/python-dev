@@ -76,4 +76,13 @@ Generadores -> Reemplazar return por yield.
 #yield permite retornar valores sin que la funcion finalice unicamente pausando su ejecucion para que posteriormente pueda renaudarse desde el punto donde se quedo.
 #Lazy iterator
 
+*args -> Alojar gran cantidad de argumentos en una tupla.
+*kwargs -> 1. No importa el orden de los parametros. // 2. Se puede aclarar los parametros con argumentos guardados en sus parametros.
+def empleado(*kwargs):
+    for key,value in kwargs.items():
+        print(f"{key} : {value}")
+
+empleado(nombre="Franco", edad = 20, lenguaje = Python)        
+
+
 """
