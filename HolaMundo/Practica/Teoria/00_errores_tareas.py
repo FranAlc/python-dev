@@ -27,4 +27,8 @@ __next__(): 1. Devuelve el siguiente valor para el iterable.
             2. Cuando usamos un bucle for para atravesar cualquier objeto iterable, internamente usa el método iter() para obtener un objeto iterador.
 for -> 1. for x,a in d: //2. for x,a in zip(x,a) //range()
 
+5. Atributos:
+__dict__:Almacenara mediante un Diccionario todos los atributos que posean un objeto.
+__init__ (self,): Se comporta como un constructor de una clase.
+
 """
