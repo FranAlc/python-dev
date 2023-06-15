@@ -13,7 +13,7 @@ class Monstruos:
 
     def atributos(self):
         print("---------------------------------------")
-        print(f"NOMBRE ENEMIGO: {self.nombre.upper()}")
-        print(f"VIDA: {self.vida}")
-        print(f"El color del enemigo es {self.color}")
+        print(f"NOMBRE ENEMIGO: {self.nombre.upper()}.")
+        print(f"VIDA: {self.vida}.")
+        print(f"El color del enemigo es {self.color}.")
         print("---------------------------------------")
