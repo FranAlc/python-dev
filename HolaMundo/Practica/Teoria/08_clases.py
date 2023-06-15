@@ -29,5 +29,42 @@ class Usuario:
 user1 = Usuario()
 print(user1.username)
 
+Llamar a un atributo de clase : 1. Usuario.username = "Franco" //
+                                2. user1 = Usuario() >> user1.username = "Franco" >>print(user1.username)
+
+                                
+
 """
 
+
+class Perro:
+
+    # constructor - propiedades
+    def __init__(self):
+        self.nombre = ""
+        self.tamano = None
+        self.color = ""
+        self.raza = ""
+
+    # metodos
+    def ladrar(self):
+        print(f"El perro {nombre_perro} ladra")
+
+    def comer(self):
+        print("El perro come")
+
+
+# Intanciar un objeto
+perro = Perro()
+
+# llamar propiedades
+nombre_perro = (input("Ingresa nombre: "))
+perro.nombre = nombre_perro
+
+tamano_perro = int(input("Digite tamaño: "))
+perro.tamano = tamano_perro
+
+print(perro.__dict__)
+
+# llamar metodos
+perro.ladrar()
