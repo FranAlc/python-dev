@@ -18,10 +18,10 @@ class Guerrero:
     def atributos(self):
         print("\nAtributos del guerrero: ")
         print(f"Nombre del Guerrero: {self.nombre.title()}.")
-        print(f"Estatura: {self.estatura}")
+        print(f"Estatura: {self.estatura}.")
         print(f"Tipo de arma: {self.tipo_arma.title()}.")
-        print(f"FUERZA: {self.fuerza}")  # daño
-        print(f"VIDA: {self.vida}")
+        print(f"FUERZA: {self.fuerza}.")  # daño
+        print(f"VIDA: {self.vida}.")
 
     def atacar(self):
         print(f"{self.nombre}, debes atacar")
