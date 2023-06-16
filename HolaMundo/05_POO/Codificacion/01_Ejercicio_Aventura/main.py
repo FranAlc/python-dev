@@ -46,6 +46,11 @@ class Main:
         pelea = Pelea_Guerrero_Monstruo()
         pelea.combate()
 
+    def pelea_dragon():
+        pelea = Pelea_Guerrero_Dragon()
+        #pelea.combate()
+
+
     print("\n\t--------¡ JUEGO DE AVENTURA !--------\n")
     print("Usted sera un personaje y debera luchar contra un enemigo...\n")
     personaje_guerrero()
@@ -70,7 +75,7 @@ class Main:
             print("Digite otra opcion.")
 
         # fin del bucle
-        print("\nDigite contra quien desea pelear: ")
+        print("\nContinuar jugando: Escoge uno")
         opcion_pelea = input("Dragon(Drg) // Monstruo(Monst): ")
         change_minus = opcion_pelea.lower()
 
