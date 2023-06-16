@@ -19,7 +19,8 @@ class Pelea_Guerrero_Monstruo:
         self.cant_golpes_enemigo = []
         self.dato_final = "lograste vencer al monstruo !!"
         self.dato_final2 = "fuiste derrotado!!"
-        self.combate2()
+        self.fin_del_combate_win()
+        self.fin_del_combate_lose()
 
     def combate(self):
         start = random.choice(self.pelea)
@@ -41,14 +42,15 @@ class Pelea_Guerrero_Monstruo:
             self.cant_golpes_enemigo = self.golpes_enemigo.count(
                 "ACERTO EL GOLPE !!")
             if self.cant_golpes_guerrero > self.cant_golpes_enemigo:
-                print(
-                    f"CANTIDAD DE GOLPES QUE LE DISTE = {self.cant_golpes_guerrero}")
+                print(f"CANTIDAD DE GOLPES QUE LE DISTE = {self.cant_golpes_guerrero}")
+                print(f"CANTIDAD DE GOLPES DADOS POR EL MONSTRUO = {self.cant_golpes_enemigo}")
                 print(f"{self.dato_final.upper()}")
-                self.combate2()
+                self.fin_del_combate_win()
             else:
-                print(
-                    f"CANTIDAD DE GOLPES DADOS POR EL MONSTRUO = {self.cant_golpes_enemigo}")
+                print(f"CANTIDAD DE GOLPES DADOS POR EL MONSTRUO = {self.cant_golpes_enemigo}")
+                print(f"CANTIDAD DE GOLPES QUE LE DISTE = {self.cant_golpes_guerrero}")
                 print(f"{personaje.nombre} {self.dato_final2.upper()}")
+                self.fin_del_combate_lose()
 
         # comienza pelea monstruo
         else:
@@ -68,17 +70,22 @@ class Pelea_Guerrero_Monstruo:
             self.cant_golpes_enemigo = self.golpes_enemigo.count(
                 "ACERTO EL GOLPE !!")
             if self.cant_golpes_guerrero > self.cant_golpes_enemigo:
-                print(
-                    f"CANTIDAD DE GOLPES QUE LE DISTE = {self.cant_golpes_guerrero}")
+                print(f"CANTIDAD DE GOLPES QUE LE DISTE = {self.cant_golpes_guerrero}")
+                print(f"CANTIDAD DE GOLPES DADOS POR EL MONSTRUO = {self.cant_golpes_enemigo}")
                 print(f"{self.dato_final.upper()}")
+                self.fin_del_combate_win()
 
             else:
-                print(
-                    f"CANTIDAD DE GOLPES DADOS POR EL MONSTRUO = {self.cant_golpes_enemigo}")
+                print(f"CANTIDAD DE GOLPES DADOS POR EL MONSTRUO = {self.cant_golpes_enemigo}")
+                print(f"CANTIDAD DE GOLPES QUE LE DISTE = {self.cant_golpes_guerrero}")
                 print(f"{personaje.nombre} {self.dato_final2.upper()}")
+                self.fin_del_combate_lose()
 
-    def combate2(self):
+    def fin_del_combate_win(self):
         print(f"\nMaravilloso {personaje.nombre} has logrado GANAR !")
+
+    def fin_del_combate_lose(self):
+        print(f"\nHas sido derrotado {personaje.nombre} pero no te desanimes!")
 
 
 class Pelea_Guerrero_Dragon:
