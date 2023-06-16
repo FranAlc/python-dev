@@ -1,39 +1,31 @@
 # Clase enemigo
-
+import random
 from personajes import *
 
 
 class Monstruos:
     def __init__(self):
         self.nombre = "Eva"
-        self.vida = 2000
+        self.vida = 3200
         self.defensa = 0
         self.color = "Verde"
+        self.tipo_arma = "Baston"
+        self.resultado = None
     # metodo
 
     def atributos(self):
         print("---------------------------------------")
         print(f"NOMBRE ENEMIGO: {self.nombre.upper()}.")
         print(f"VIDA: {self.vida}.")
+        print(f"Defensa: {self.defensa}.")
         print(f"El color del enemigo es {self.color}.")
         print("---------------------------------------")
 
     def atacar(self):
-        acumulador = 0
-        aciertos = []
-        fallos = []
-        golpes = []
-        golpes.append("Golpeaste al Guerrero!")
-        golpes.append("Fallaste!")
-        start = random.choice(golpes)
-        if start == [0]:
-            acumulador += self.fuerza
-            aciertos.append(acumulador)
-            if sum(aciertos) == 2000:
-                print("Derrotaste al Guerrero!".title())
-
-        elif start == [1]:
-            acumulador += self.fallaste
-            fallos.append(acumulador)
-
-        print(f"{self.nombre.title()}, debes atacar..")
+        str_sorteo = (f"ATACA CON EL {self.tipo_arma}",
+                      "CONTINUA ATACANDO CON LAS GARRAS")
+        self.resultado = random.choice(str_sorteo)
+        if self.resultado == str_sorteo[0]:
+            print(f"{self.nombre.title()} {str_sorteo[0]}..")
+        else:
+            print(f"{self.nombre.title()} {str_sorteo[1]}..")
