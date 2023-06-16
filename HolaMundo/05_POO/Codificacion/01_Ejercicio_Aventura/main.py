@@ -2,6 +2,7 @@
 import random
 from enemigos import *
 from personajes import *
+from pelea import *
 
 # llamado de las clases localmente
 personaje = Guerrero()
@@ -24,26 +25,27 @@ def personaje_guerrero():
     print("Digite los datos del guerrero:")
     nombre_personaje = input("Nombre: ")
     estatura_personaje = float(input("Estatura: "))
-    arma_personaje = input("Ingrese un arma: ")
-
+    print("Elija un arma y escribala tal cual aparece: ")
+    print("1.Espada")
+    print("2.Hacha")
+    arma_personaje = input("Digite arma: ").title()
     # alojar datos anteriores
     personaje.nombre = nombre_personaje
     personaje.estatura = estatura_personaje
-    personaje.tipo_arma = arma_personaje
-    personaje.fuerza = 400
+    if arma_personaje == "espada".title():
+        personaje.tipo_arma = arma_personaje
+        personaje.fuerza = 400
+    elif arma_personaje == "hacha".title():
+        personaje.tipo_arma = arma_personaje
+        personaje.fuerza = 200
     personaje.atributos()
 
 # pelea
 
 
 def pelea():
-
-    # random
-    opciones = "personaje"
-    if opciones == "personaje":
-        personaje.atacar()
-    elif opciones == [1]:
-        enemigo.atacar()
+    pelea = Pelea_Guerrero_Monstruo()
+    pelea.combate()
 
 
 print("\n\t--------¡ JUEGO DE AVENTURA !--------\n")
