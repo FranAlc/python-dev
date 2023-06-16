@@ -19,6 +19,7 @@ class Pelea_Guerrero_Monstruo:
         self.cant_golpes_enemigo = []
         self.dato_final = "lograste vencer al monstruo !!"
         self.dato_final2 = "fuiste derrotado!!"
+        self.combate2()
 
     def combate(self):
         start = random.choice(self.pelea)
@@ -35,21 +36,22 @@ class Pelea_Guerrero_Monstruo:
                 self.resultado = random.choice(self.golpes)
                 print(f"{self.resultado}\n")
                 self.golpes_enemigo.append(self.resultado)
-        self.cant_golpes_guerrero = self.golpes_guerrero.count(
-            "ACERTO EL GOLPE !!")
-        self.cant_golpes_enemigo = self.golpes_enemigo.count(
-            "ACERTO EL GOLPE !!")
-        if self.cant_golpes_guerrero > self.cant_golpes_enemigo:
-            print(
-                f"CANTIDAD DE GOLPES QUE LE DISTE = {self.cant_golpes_guerrero}")
-            print(f"{self.dato_final.upper()}")
-        else:
-            print(
-                f"CANTIDAD DE GOLPES DADOS POR EL MONSTRUO = {self.cant_golpes_enemigo}")
-            print(f"{personaje.nombre} {self.dato_final2.upper()}")
+            self.cant_golpes_guerrero = self.golpes_guerrero.count(
+                "ACERTO EL GOLPE !!")
+            self.cant_golpes_enemigo = self.golpes_enemigo.count(
+                "ACERTO EL GOLPE !!")
+            if self.cant_golpes_guerrero > self.cant_golpes_enemigo:
+                print(
+                    f"CANTIDAD DE GOLPES QUE LE DISTE = {self.cant_golpes_guerrero}")
+                print(f"{self.dato_final.upper()}")
+                self.combate2()
+            else:
+                print(
+                    f"CANTIDAD DE GOLPES DADOS POR EL MONSTRUO = {self.cant_golpes_enemigo}")
+                print(f"{personaje.nombre} {self.dato_final2.upper()}")
 
         # comienza pelea monstruo
-        if start == self.pelea[1]:
+        else:
             for i in range(1, 9):
                 enemigo.atacar()  # ataca el enemigo
                 self.resultado = random.choice(self.golpes)
@@ -61,15 +63,24 @@ class Pelea_Guerrero_Monstruo:
                 print(f"{self.resultado}\n")
                 self.golpes_guerrero.append(self.resultado)
 
-        self.cant_golpes_guerrero = self.golpes_guerrero.count(
-            "ACERTO EL GOLPE !!")
-        self.cant_golpes_enemigo = self.golpes_enemigo.count(
-            "ACERTO EL GOLPE !!")
-        if self.cant_golpes_guerrero > self.cant_golpes_enemigo:
-            print(
-                f"CANTIDAD DE GOLPES QUE LE DISTE = {self.cant_golpes_guerrero}")
-            print(f"{self.dato_final.upper()}")
-        else:
-            print(
-                f"CANTIDAD DE GOLPES DADOS POR EL MONSTRUO = {self.cant_golpes_enemigo}")
-            print(f"{personaje.nombre} {self.dato_final2.upper()}")
+            self.cant_golpes_guerrero = self.golpes_guerrero.count(
+                "ACERTO EL GOLPE !!")
+            self.cant_golpes_enemigo = self.golpes_enemigo.count(
+                "ACERTO EL GOLPE !!")
+            if self.cant_golpes_guerrero > self.cant_golpes_enemigo:
+                print(
+                    f"CANTIDAD DE GOLPES QUE LE DISTE = {self.cant_golpes_guerrero}")
+                print(f"{self.dato_final.upper()}")
+
+            else:
+                print(
+                    f"CANTIDAD DE GOLPES DADOS POR EL MONSTRUO = {self.cant_golpes_enemigo}")
+                print(f"{personaje.nombre} {self.dato_final2.upper()}")
+
+    def combate2(self):
+        print(f"\nMaravilloso {personaje.nombre} has logrado GANAR !")
+
+
+class Pelea_Guerrero_Dragon:
+    def __init__(self):
+        self.pelear = None
