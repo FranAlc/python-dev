@@ -48,8 +48,7 @@ class Main:
 
     def pelea_dragon():
         pelea = Pelea_Guerrero_Dragon()
-        #pelea.combate()
-
+        pelea.pelea()
 
     print("\n\t--------¡ JUEGO DE AVENTURA !--------\n")
     print("Usted sera un personaje y debera luchar contra un enemigo...\n")
@@ -71,8 +70,7 @@ class Main:
             pelea()
 
         elif change_minus == "drg":
-            print("Todavia no desarrollado.")
-            print("Digite otra opcion.")
+            pelea_dragon()
 
         # fin del bucle
         print("\nContinuar jugando: Escoge uno")
