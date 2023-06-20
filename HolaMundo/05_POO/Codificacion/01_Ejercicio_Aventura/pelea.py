@@ -109,39 +109,44 @@ class Pelea_Guerrero_Dragon:
         self.vida_enemigo = []
         self.resul = None
         self.vida_guerrero = 2000
-        self.acumulador = 1
         self.gana_personaje = None
         self.gana_Dragon = None
 
     def pelea(self):
-
+        enemigo_dragon.atributos()
         self.random_personajes = random.choice(self.comienza_atacando)
         if self.random_personajes == self.comienza_atacando[0]:
             # Comienza atacando el personaje
-            print("Comienzas atacando")
+            print("\nComienzas atacando")
             self.random_golpes = random.choice(self.golpes)
             if self.random_golpes == self.golpes[0] or self.random_golpes == self.golpes[1]:
-                for i in range(1, 9):
+                for i in range(100):
                     # comienza personaje
                     print("Guerrero: ", self.golpes[0])
                     enemigo_dragon.vida -= 400
-                    enemigo_dragon.vida *= 1
                     self.vida_enemigo.append(enemigo_dragon.vida)
-                    print("\nVida enemigo: ", self.vida_enemigo)
+                    print("Vida enemigo: ", self.vida_enemigo, "\n")
                     if self.vida_enemigo[-1] < 0:
-                        print("\nLOGRASTE VENCER AL DRAGON !!!")
-                        print(f"VIDA FINAL DE TU PERSONAJE: {self.vida_guerrero}")
-                        print(f"VIDA FINAL DEL DRAGON: {enemigo_dragon.vida}")
+                        print("++++++++++++++++++++++++++++++++++++++++")
+                        print("++   LOGRASTE VENCER AL DRAGON !!!    ++")
+                        print(
+                            f"++   VIDA FINAL DE TU PERSONAJE: {self.vida_guerrero}  ++")
+                        print(
+                            f"++   VIDA FINAL DEL DRAGON: {enemigo_dragon.vida}      ++")
+                        print("++++++++++++++++++++++++++++++++++++++++")
+                        enemigo_dragon.vida = 3000
+                        self.vida_guerrero = 2000
                         break
 
                     # sigue dragon
                     print("Dragon ", self.golpes[0])
                     self.vida_guerrero -= 200
-                    self.vida_guerrero *= 1
                     self.vida_personaje.append(self.vida_guerrero)
-                    print("\nVida personaje: ", self.vida_personaje)
+                    print("Vida personaje: ", self.vida_personaje, "\n")
                     if self.vida_personaje[-1] < 0:
                         print("\nEL DRAGON TE HA VENCIDO !!!")
+                        enemigo_dragon.vida = 3000
+                        self.vida_guerrero = 2000
                         break
 
     # pelea dragon
@@ -149,46 +154,32 @@ class Pelea_Guerrero_Dragon:
             print("Comienza atacando el enemigo")
             self.random_golpes = random.choice(self.golpes)
             if self.random_golpes == self.golpes[0] or self.random_golpes == self.golpes[1]:
-                for i in range(1, 9):
+                for i in range(100):
                     # comienza dragon
                     print("Dragon ", self.golpes[0])
                     self.vida_guerrero -= 200
-                    self.vida_guerrero *= 1
                     self.vida_personaje.append(self.vida_guerrero)
-                    print("\nVida personaje: ", self.vida_personaje)
+                    print("Vida personaje: ", self.vida_personaje, "\n")
                     if self.vida_personaje[-1] < 0:
                         print("\nEL DRAGON TE HA VENCIDO !!!")
+                        enemigo_dragon.vida = 3000
+                        self.vida_guerrero = 2000
                         break
 
                     # sigue personaje
                     print("Guerrero: ", self.golpes[0])
                     enemigo_dragon.vida -= 400
-                    enemigo_dragon.vida *= 1
                     self.vida_enemigo.append(enemigo_dragon.vida)
-                    print("\nVida enemigo: ", self.vida_enemigo)
+                    print("Vida enemigo: ", self.vida_enemigo, "\n")
                     if self.vida_enemigo[-1] < 0:
-                        print("\nLOGRASTE VENCER AL DRAGON !!!")
-                        print(f"VIDA FINAL DE TU PERSONAJE: {self.vida_guerrero}")
-                        print(f"VIDA FINAL DEL DRAGON: {enemigo_dragon.vida}")
+                        print("++++++++++++++++++++++++++++++++++++++++")
+                        print("++   LOGRASTE VENCER AL DRAGON !!!    ++")
+                        print(
+                            f"++   VIDA FINAL DE TU PERSONAJE: {self.vida_guerrero}  ++")
+                        print(
+                            f"++   VIDA FINAL DEL DRAGON: {enemigo_dragon.vida}      ++")
+                        print("++++++++++++++++++++++++++++++++++++++++")
+                        enemigo_dragon.vida = 3000
+                        self.vida_guerrero = 2000
                         break
 
-        """
-
-            # Comienza atacando el enemigo "Dragon"
-            print("Comienza atacando el enemigo Dragon")
-            while enemigo.vida == 0 and personaje.vida == 0:
-
-                self.random_golpes = random.choice(self.golpes)
-                if self.random_golpes == self.golpes[0]:
-                    print("Dragon, ", self.golpes[0])
-                    self.resul = personaje.vida - 200
-                    self.vida_enemigo.append(self.resul)
-
-                personaje.atacar()
-                self.random_golpes = random.choice(self.golpes)
-                if self.random_golpes == self.golpes[0]:
-                    print("Guerrero, ", self.golpes[0])
-                    self.resul = enemigo.vida - 400
-                    self.vida_enemigo.append(self.resul)
-           
-        """
