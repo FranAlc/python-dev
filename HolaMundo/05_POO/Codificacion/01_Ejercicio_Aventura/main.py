@@ -13,7 +13,7 @@ class Main:
     def bienvenida_al_personaje():
         print("\n-------------------------------------------------------------------------------------------")
         print(
-            f"\tHOLA {personaje.nombre.upper()}, BIENVENIDO A ESTA AVENTURA.")
+            f"\t\t\tHOLA {personaje.nombre.upper()}, BIENVENIDO A ESTA AVENTURA.")
         print(
             f"PARA COMENZAR RECUERDE QUE SU VIDA ES DE {personaje.vida} y su fuerza es {personaje.fuerza} .")
         print(f"TENIENDO EN CUENTA ESO A LA HORA DE PELEAR SU FUERZA ES EL ATAQUE QUE INFLIGE AL ENEMIGO.")
@@ -37,7 +37,7 @@ class Main:
             personaje.fuerza = 400
         elif arma_personaje == "hacha".title():
             personaje.tipo_arma = arma_personaje
-            personaje.fuerza = 200
+            personaje.fuerza = 400
         personaje.atributos()
 
     # pelea
@@ -55,14 +55,14 @@ class Main:
     personaje_guerrero()
     bienvenida_al_personaje()
     # resto del main
-
-    print("Digite contra quien desea pelear: ")
+    print("-------------------------------------------------------------------------------------------")
+    print("\nDigite contra quien desea pelear: ")
     opcion_pelea = input("Dragon(Drg) // Monstruo(Monst): ")
     change_minus = opcion_pelea.lower()  # converti en minuscula la opcion
     while change_minus == "monst" or change_minus == "drg":
 
         if change_minus == "monst":
-            print(f"\nGuerrero {personaje.nombre}")
+            print(f"\nGuerrero {personaje.nombre.title()}")
             print("Seleccionaste pelear con un Monstruo.\n")
             # Enemigo informacion
             enemigo.atributos()
@@ -70,6 +70,8 @@ class Main:
             pelea()
 
         elif change_minus == "drg":
+            print(f"\nGuerrero {personaje.nombre.title()}")
+            print("Seleccionaste pelear con un Dragon.\n")
             pelea_dragon()
 
         # fin del bucle
