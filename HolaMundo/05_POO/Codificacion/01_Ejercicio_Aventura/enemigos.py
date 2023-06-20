@@ -33,8 +33,9 @@ class Monstruos:
 class Dragon():
     def __init__(self):
         self.nombre = "Dragon"
-        self.vida = 3200
+        self.vida = 3000
         self.defensa = 0
+        self.fuerza = 200
         self.color = "Rojo"
         self.tipo_arma = "Fuego"
         self.resultado = None
