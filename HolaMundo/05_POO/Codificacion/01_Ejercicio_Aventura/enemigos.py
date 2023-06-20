@@ -49,5 +49,4 @@ class Dragon():
         print(f"El color del enemigo es {self.color}.")
         print("---------------------------------------")
 
-    def atacar(self):
-        print() #falta metodo de ataque
+    
