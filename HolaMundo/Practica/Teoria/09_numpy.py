@@ -36,12 +36,10 @@ Convertir un vector en una matriz -> 2x5 -> 1.Crear un vector // 2.Convertir dic
 #3. Convertir 2
     print(a.reshape(2,5)) #Muestro sin guardar en una variable C a la variable A
 
-reshape -> Solo funciona si el numero de elementos del arreglo previo y el final son iguales, en caso que no se cumpla da error.    
+reshape -> Solo funciona si el numero de elementos del arreglo previo y el final son iguales, en caso que no se cumpla da error. "ValueError"   
+
+Crear vector con numeracion ascendente o descendente -> arange(valor_inicial, valor_final, incremento)
+#    vector = arange(-2, 10, 3)
+    >> [-2, 1, 4, 7 ]
 
 """
-import numpy as np
-#Crear
-a = np.arange(1, 11)
-#Convertir
-c = a.reshape(2,5)
-print(c)
