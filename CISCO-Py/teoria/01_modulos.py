@@ -44,8 +44,15 @@ print(math.sin(math.pi/2))
 
 Segundo modulo: (from)
 
+Buena practica:
+# from module import name as alias
+Mala:
+# from module import my_function, my_data
+
 #La palabra clave reservada from
 #Nombre del modulo a ser importado
 #Palabra clave reservada import
+
+Basicamente se permite no solo importar un modulo como un todo, sino tambien importar solo entidades individuales de el.
 
 """
