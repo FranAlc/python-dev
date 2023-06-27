@@ -42,4 +42,13 @@ Crear vector con numeracion ascendente o descendente -> arange(valor_inicial, va
 #    vector = arange(-2, 10, 3)
     >> [-2, 1, 4, 7 ]
 
+Por que el uso de Numpy? 
+Para cumplir el uso de matrices y no de una forma lenta de procesarlas como lo es implementar las Listas, numpy
+cumple con el objetivo de propocionar un objeto de matriz que es hasta 50 veces mas rapido que las listas tradicionales aca en Python.
+
+El objeto matriz de Numpy se llama -> ndarray
+
+Esta biblioteca se utiliza mayormente para la ciencia de datos.
+
+
 """
